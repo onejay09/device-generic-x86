@@ -1,0 +1,14 @@
+# system.prop for lollipop-x86
+#poweroff.doubleclick=1
+
+debug.sf.hw=1
+video.accelerate.hw=1
+persist.sys.ui.hw=1
+persist.sys.composition.type=gpu
+debug.composition.type=gpu
+ro.config.nocheckin=1
+persist.service.adb.enable=1
+persist.sys.root_access=3
+ro.debuggable=1
+persist.service.adb.enable=1
+
