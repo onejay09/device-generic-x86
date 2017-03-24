@@ -24,3 +24,5 @@ alsa_amixer -c0 sset 'HP' 0
 
 # Send Android Intent
 am broadcast -a android.intent.action.HEADSET_PLUG --es name Speakers --ei state 0 --ei microphone 0
+sleep 10
+alsa_amixer -c0 sset 'Speaker' 30

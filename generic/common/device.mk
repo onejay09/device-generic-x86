@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+GAPPS_VARIANT := mini
+
 PRODUCT_DIR := $(dir $(lastword $(filter-out device/common/%,$(filter device/%,$(ALL_PRODUCTS)))))
 
 # build.prop overrides
@@ -135,3 +137,5 @@ $(call inherit-product-if-exists,$(LOCAL_PATH)/nativebridge/nativebridge.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
+
+$(call inherit-product, vendor/google/build/opengapps-packages.mk)
